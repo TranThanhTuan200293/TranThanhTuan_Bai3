@@ -6,8 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./asset/css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />"
-        <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
-        <script src="./asset/js/main.js"></script>
+        
         <title>trần thanh tuấn bài 3</title>
     </head>
     <body>
@@ -81,17 +80,34 @@
                 <div class="header-bottom">
                     <div id="header-bottom-container" class="container">
                         <div class="header-bottom-left">
-                            <h3>DANH MỤC SẢN PHẨM</h3>
-                            <i class="fas fa-bars"></i>
+                                <h3>DANH MỤC SẢN PHẨM</h3>
+                            <div id="toggle">
+                                <i class="fas fa-bars"></i>
+                            </div>
                         </div>
                         <div class="header-bottom-right">
                             <ul class="header-bottom-right-list">
-                                <li class="header-bottom-right-item">TRANG CHỦ</li>
-                                <li class="header-bottom-right-item">GIỚI THIỆU</li>
-                                <li class="header-bottom-right-item">LIMITED</li>
-                                <li class="header-bottom-right-item">KHUYẾN MÃI</li>
-                                <li class="header-bottom-right-item">TIN TỨC</li>
-                                <li class="header-bottom-right-item">LIÊN HỆ</li>
+                                <li class="header-bottom-right-item"><a href="">TRANG CHỦ</a></li>
+                                <li class="header-bottom-right-item"><a href="">GIỚI THIỆU</a></li>
+                                <li class="header-bottom-right-item"><a href="">LIMITED</a></li>
+                                <li class="header-bottom-right-item"><a href="">KHUYẾN MÃI</a></li>
+                                <li class="header-bottom-right-item"><a href="">TIN TỨC</a>
+                                    <ul class="sub-item">
+                                        <li><a href="">Tin tức</a></li>
+                                        <li><a href="">Người nổi tiếng</a></li>
+                                        <li><a href="">Tin Khuyến mãi</a></li>
+                                        <li><a href="">Tuyển dụng</a></li>
+                                        <li><a href="">Tuyển thủ Việt Nam</a></li>
+                                        <li><a href="">Đồng hồ Casio</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header-bottom-right-item"><a href="">LIÊN HỆ</a>
+                                    <ul class="sub-item">
+                                        <li><a href="">Cửa hàng</a></li>
+                                        <li><a href="">Đại lý</a></li>
+                                        <li><a href="">Trung tâm bảo hành</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -612,5 +628,7 @@
 
             <!-- end phần footer -->
         </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
+        <script src="./asset/js/main.js"></script>
     </body>
 </html>
