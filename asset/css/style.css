@@ -133,9 +133,7 @@ button {
     justify-content: space-evenly;
     align-items: center;
     background-color: red;
-}
-.header-bottom-left-top {
-    
+    position: relative;
 }
 .header-bottom-left h3 {
     margin: 0;
@@ -143,6 +141,32 @@ button {
 }
 #toggle {
     cursor: pointer;
+}
+.bosuutap {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    background-color: aliceblue;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    display: none;
+}
+.bosuutap ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+.bosuutap ul li{
+    margin: 5% auto;
+}
+.bosuutap ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: bolder;
+}
+.bosuutap ul li a:hover {
+    text-decoration:underline;
+    color: red;
 }
 .header-bottom-right {
     flex-basis: 71%;
@@ -183,6 +207,11 @@ button {
 }
 .sub-item li>a:hover {
     color: red;
+}
+.has-child::after {
+    font: var(--fa-font-solid);
+    content: "";
+    color: black;
 }
 /* phần slide */
 
