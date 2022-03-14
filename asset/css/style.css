@@ -134,9 +134,15 @@ button {
     align-items: center;
     background-color: red;
 }
+.header-bottom-left-top {
+    
+}
 .header-bottom-left h3 {
     margin: 0;
     color: white;
+}
+#toggle {
+    cursor: pointer;
 }
 .header-bottom-right {
     flex-basis: 71%;
@@ -148,8 +154,36 @@ button {
 }
 .header-bottom-right-item {
     list-style: none;
+    position: relative;
 }
-
+.header-bottom-right-item a {
+    text-decoration: none;
+    color: black;
+}
+.header-bottom-right-item a:hover {
+    color: red;
+}
+.header-bottom-right-item .sub-item {
+    position: absolute;
+    background-color: aliceblue;
+    padding: 15px 0px;
+    list-style: none;
+    width: 300%;
+    display: none;
+}
+.header-bottom-right-item:hover .sub-item {
+    display: block;
+}
+.sub-item li {
+    margin: 10% 5%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.sub-item li:last-child {
+    border: none;
+}
+.sub-item li>a:hover {
+    color: red;
+}
 /* phần slide */
 
 .slide {
