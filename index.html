@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
         <link rel="stylesheet" href="./asset/css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />"
         
@@ -198,35 +200,65 @@
             <!-- end phần category -->
 
             <!-- phần sản phẩm hot -->
-            <div class="sanphamhot">
-                <div class="sanphamhot-nen">
-                    <div class="sanphamhot-left">
-                        <img src="./asset/image/sanphammoi1.jpg" alt="">
-                    </div>
-                    <div class="sanphamhot-right">
-                        <img src="./asset/image/sanphammoi1.jpg" alt="">
+            <div class="sanphamhot-nen">
+                <div class="sanphamhot-left">
+                    <div class="container_sphot">
+                        <h1>Sản Phẩm <span>HOT</span></h1>
+                        <div class="line">
+                            <div class="line-box">
+                    
+                            </div>
+                        </div>
+                        <div class="sanphamhot_content">
+                            <div class="sanphamhot-slide1">
+                                <div>
+                                    <h1>G-Shock</h1>
+                                    <h2>GA-110WLP-7A</h2>
+                                    <p>Giá: <span>5,078,000 đ</span></p>
+                                    <a href="">Xem chi tiết</a>
+                                </div> 
+                                <div>
+                                    <h1>GM-2100</h1>
+                                    <h2>GM-2100A-1A</h2>
+                                    <p>Giá: <span>,078,000 đ</span></p>
+                                    <a href="">Xem chi tiết</a>
+                                </div>   
+                                <div>
+                                    <h1>G-Shock Nữ</h1>
+                                    <h2>GA-110WLP-7A</h2>
+                                    <p>Giá: <span>6,078,000 đ</span></p>
+                                    <a href="">Xem chi tiết</a>
+                                </div>
+                                <div>
+                                    <h1>BA-110</h1>
+                                    <h2>GA-110WLP-7A</h2>
+                                    <p>Giá: <span>5,078,000 đ</span></p>
+                                    <a href="">Xem chi tiết</a>
+                                </div>
+                                <div>
+                                    <h1>ĐỒNG HỒ ĐÔI CASIO</h1>
+                                    <h2>GA-110WLP-7A</h2>
+                                    <p>Giá: <span>5,078,000 đ</span></p>
+                                    <a href="">Xem chi tiết</a>
+                                </div>               
+                            </div>
+                        </div>
+                        <div class="sanphamhot-controller">
+                            <div id="sanphamhot-controls">
+                                <button class="sanphamhot-previous"><i class="fa-solid fa-angle-left"></i></button>
+                                <button class="sanphamhot-next"><i class="fa-solid fa-angle-right"></i></button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="container" >
-                    <div class="sanphamhot-container">
-                        <div class="sanphamhot-content">
-                            <h1>Sản Phẩm <span>HOT</span></h1>
-                            <div class="sanphammoi-line">
-                                <div class="sanphammoi-line-box">
-            
-                                </div>
-                            </div>
-                            <ul class="sanphamhot-content-list">
-                                <li class="sanphamhot-content-list-item"><h1>G-Shock</h1></li>
-                                <li class="sanphamhot-content-list-item"><p>GA-110WLP-7A</p></li>
-                                <li class="sanphamhot-content-list-item"><h3>Giá: <span>7,000,000</span></h3></li>
-                                <li class="sanphamhot-content-list-item"><a href="">Xem chi tiết</a></li>
-                            </ul>
-                        </div>
-                        <div class="sanphamhot-content1">
-
-                        </div>
-                    </div>  
+                <div class="sanphamhot-right">              
+                    <div class="sanphamhot-slide">
+                        <img src="./asset/image/sanphammoi1.jpg" alt="">    
+                        <img src="./asset/image/sanphammoi2.jpg" alt="">
+                        <img src="./asset/image/sanphammoi3.jpg" alt="">      
+                        <img src="./asset/image/sanphammoi4.jpg" alt="">
+                        <img src="./asset/image/sanphammoi5.jpg" alt="">                   
+                    </div>
                 </div>
             </div>
             <!-- end phần sản phẩm hot -->
@@ -251,220 +283,288 @@
             <!-- end phần thương hiệu -->
 
             <!-- phần sản phẩm mới -->
-            <div class="sanphammoi container">
-                <div class="sanphammoi-top">
-                    <h2>Sản phẩm mới</h2>
-                    <div class="sanphammoi-top-remote">
-                        <div class="sanphammoi-top-remote-item">
-                            <img src="./asset/image/muiten1.png" alt="">
-                        </div>
-                        <div class="sanphammoi-top-remote-item">
-                            <img src="./asset/image/muiten.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="sanphammoi-line">
-                    <div class="sanphammoi-line-box">
-
-                    </div>
-                </div>
-                <div class="sanphammoi-main">
-                    <div class="sanphammoi-main-item">
-                        <img src="./asset/image/new1.jpg" alt="">
-                        <div class="sanphammoi-main-item-content">
-                            <div class="line">
-
+            <div class="sanphammoi">
+                <section id="sanphammoi_slider">
+                    <div class="container" >
+                        <div class="sanphammoi-controller">
+                            <div>
+                                <h2>Sản Phẩm mới</h2>
                             </div>
-                            <h3>GA-2200MFR-5A</h3>
-                            <p>4,664,000 đ</p>
-                        </div>
-                        <div class="new">
-                            <span>new</span>
-                        </div>
-                    </div>
-                    <div class="sanphammoi-main-item">
-                        <img src="./asset/image/new2.jpg" alt="">
-                        <div class="sanphammoi-main-item-content">
-                            <div class="line">
-
+                            <div id="sanphammoi-controls">
+                                <button class="sanphammoi-previous"><i class="fa-solid fa-angle-left"></i></button>
+                                <button class="sanphammoi-next"><i class="fa-solid fa-angle-right"></i></button>
                             </div>
-                            <h3>GA-2200MFR-3A</h3>
-                            <p>4,664,000 đ</p>
                         </div>
-                        <div class="new">
-                            <span>new</span>
-                        </div>
-                    </div>
-                    <div class="sanphammoi-main-item">
-                        <img src="./asset/image/new3.jpg" alt="">
-                        <div class="sanphammoi-main-item-content">
-                            <div class="line">
-
+                        <div class="line">
+                            <div class="line-box">
+        
                             </div>
-                            <h3>LOV-18A-7A</h3>
-                            <p>6,477,000 đ</p>
                         </div>
-                        <div class="new">
-                            <span>new</span>
-                        </div>
-                        <div class="sale-off">
-                            <span>Giảm 30%</span>
-                        </div>
-                        <div class="giacu">
-                            <span>1,800,000</span>
-                        </div>
-                    </div>
-                    <div class="sanphammoi-main-item">
-                        <img src="./asset/image/new4.jpg" alt="">
-                        <div class="sanphammoi-main-item-content">
-                            <div class="line">
-
+                        <div class="sanphammoi-my-slider">
+                            <div class="sanphammoi-slide">
+                                <div class="sanphammoi-slide-box">
+                                    <img src="./asset/image/new1.jpg" alt="">
+                                    <div class="sanphammoi-line1">          
+                                    </div>
+                                    <div class="sanphammoi-content">
+                                        <h2>GW-B5600HR-1</h2>
+                                        <h3>7000000 đ</h3>
+                                    </div>
+                                    <div class="sanphammoi-new">
+                                        new
+                                    </div>
+                                    <div class="sanphammoi-sale">
+                                        sale 30%
+                                    </div>
+                                    <div class="giacu">
+                                        5000000 đ
+                                    </div>
+                                </div>
                             </div>
-                            <h3>GA-2200MFR-5A</h3>
-                            <p>4,664,000 đ</p>
-                        </div>
-                        <div class="new">
-                            <span>new</span>
-                        </div>
-                        <div class="sale-off">
-                            <span>Giảm 30%</span>
-                        </div>
-                        <div class="giacu">
-                            <span>1,800,000</span>
-                        </div>
-                    </div>
-                    <div class="sanphammoi-main-item">
-                        <img src="./asset/image/new5.jpg" alt="">
-                        <div class="sanphammoi-main-item-content">
-                            <div class="line">
-
+                            <div class="sanphammoi-slide">
+                                <div class="sanphammoi-slide-box">
+                                    <img src="./asset/image/new2.jpg" alt="">
+                                    <div class="sanphammoi-line1">                                          
+                                    </div>
+                                    <div class="sanphammoi-content">
+                                        <h2>GW-B5600HR-1</h2>
+                                        <h3>7000000 đ</h3>
+                                    </div>
+                                    <div class="sanphammoi-new">
+                                        new
+                                    </div>
+                                </div>                               
+                            </div>             
+                            <div class="sanphammoi-slide">
+                                <div class="sanphammoi-slide-box">
+                                    <img src="./asset/image/new3.jpg" alt="">
+                                    <div class="sanphammoi-line1">                                  
+                                    </div>
+                                    <div class="sanphammoi-content">
+                                        <h2>GW-B5600HR-1</h2>
+                                        <h3>7000000 đ</h3>
+                                    </div>
+                                    <div class="sanphammoi-new">
+                                        new
+                                    </div>
+                                </div>                           
+                            </div>                   
+                            <div class="sanphammoi-slide">
+                                <div class="sanphammoi-slide-box">
+                                    <img src="./asset/image/new4.jpg" alt="">
+                                    <div class="sanphammoi-line1">                                          
+                                    </div>
+                                    <div class="sanphammoi-content">
+                                        <h2>GW-B5600HR-1</h2>
+                                        <h3>7000000 đ</h3>
+                                    </div>
+                                    <div class="sanphammoi-new">
+                                        new
+                                    </div>
+                               </div>                            
+                            </div>                       
+                            <div class="sanphammoi-slide">
+                                <div class="sanphammoi-slide-box">
+                                    <img src="./asset/image/new5.jpg" alt="">
+                                    <div class="sanphammoi-line1">                                           
+                                    </div>
+                                    <div class="sanphammoi-content">
+                                        <h2>GW-B5600HR-1</h2>
+                                        <h3>7000000 đ</h3>
+                                    </div>
+                                    <div class="sanphammoi-new">
+                                        new
+                                    </div>
+                                </div>                               
                             </div>
-                            <h3>GA-2200MFR-5A</h3>
-                            <p>4,664,000 đ</p>
-                        </div>
-                        <div class="new">
-                            <span>new</span>
-                        </div>
+                            <div class="sanphammoi-slide">
+                                <div class="sanphammoi-slide-box">
+                                    <img src="./asset/image/hot1.jpg" alt="">
+                                    <div class="sanphammoi-line1">                                         
+                                    </div>
+                                    <div class="sanphammoi-content">
+                                        <h2>GW-B5600HR-1</h2>
+                                        <h3>7000000 đ</h3>
+                                    </div>
+                                    <div class="sanphammoi-new">
+                                        new
+                                    </div>
+                                </div>                               
+                            </div>
+                            <div class="sanphammoi-slide">
+                                <div class="sanphammoi-slide-box">
+                                    <img  src="./asset/image/new1.jpg" alt="">
+                                    <div class="sanphammoi-line1">                                          
+                                    </div>
+                                    <div class="sanphammoi-content">
+                                        <h2>GW-B5600HR-1</h2>
+                                        <h3>7000000 đ</h3>
+                                    </div>
+                                    <div class="sanphammoi-new">
+                                        new
+                                    </div>
+                                </div>                             
+                            </div>
+                            <div class="sanphammoi-slide">
+                                <div class="sanphammoi-slide-box">
+                                    <img src="./asset/image/new1.jpg" alt="">
+                                    <div class="sanphammoi-line1">        
+                                    </div>
+                                    <div class="sanphammoi-content">
+                                        <h2>GW-B5600HR-1</h2>
+                                        <h3>7000000 đ</h3>
+                                    </div>
+                                    <div class="sanphammoi-new">
+                                        new
+                                    </div>
+                                </div>                     
+                            </div>
                     </div>
-                </div>
+                </section>
             </div>
             <!-- end phần sản phẩm mới -->
-            <div class="banchay container">
-                <div class="banchay-top">
-                    <h2>Sản phẩm bán chạy</h2>
-                    <div class="banchay-top-remote">
-                        <div class="banchay-top-remote-item">
-                            <img src="./asset/image/muiten1.png" alt="">
-                        </div>
-                        <div class="banchay-top-remote-item">
-                            <img src="./asset/image/muiten.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="sanphammoi-line">
-                    <div class="sanphammoi-line-box">
 
-                    </div>
-                </div>
-                <div class="banchay-main">
-                    <div class="banchay-main-item">
-                        <img src="./asset/image/hot1.jpg" alt="">
-                        <div class="banchay-main-item-content">
-                            <div class="line1">
-
-                            </div>
-                            <h3>GA-2200MFR-5A</h3>
-                            <p>4,664,000 đ</p>
-                        </div>
-                        <div class="new1">
-                            <span>hot</span>
-                        </div>
-                        <div class="sale-off1">
-                            <span>Giảm 30%</span>
-                        </div>
-                        <div class="giacu1">
-                            <span>1,800,000</span>
-                        </div>
-                    </div>
-                    <div class="banchay-main-item">
-                        <img src="./asset/image/hot2.jpg" alt="">
-                        <div class="banchay-main-item-content">
-                            <div class="line1">
-
-                            </div>
-                            <h3>GA-2200MFR-5A</h3>
-                            <p>4,664,000 đ</p>
-                        </div>
-                        <div class="new1">
-                            <span>hot</span>
-                        </div>
-                        <div class="sale-off1">
-                            <span>Giảm 30%</span>
-                        </div>
-                        <div class="giacu1">
-                            <span>1,800,000</span>
-                        </div>
-                    </div>
-                    <div class="banchay-main-item">
-                        <img src="./asset/image/hot3.jpg" alt="">
-                        <div class="banchay-main-item-content">
-                            <div class="line1">
-
-                            </div>
-                            <h3>GA-2200MFR-5A</h3>
-                            <p>4,664,000 đ</p>
-                        </div>
-                        <div class="new1">
-                            <span>hot</span>
-                        </div>
-                        <div class="sale-off1">
-                            <span>Giảm 30%</span>
-                        </div>
-                        <div class="giacu1">
-                            <span>1,800,000</span>
-                        </div>
-                    </div>
-                    <div class="banchay-main-item">
-                        <img src="./asset/image/hot4.jpg" alt="">
-                        <div class="banchay-main-item-content">
-                            <div class="line1">
-
-                            </div>
-                            <h3>GA-2200MFR-5A</h3>
-                            <p>4,664,000 đ</p>
-                        </div>
-                        <div class="new1">
-                            <span>hot</span>
-                        </div>
-                        <div class="sale-off1">
-                            <span>Giảm 30%</span>
-                        </div>
-                        <div class="giacu1">
-                            <span>1,800,000</span>
-                        </div>
-                    </div>
-                    <div class="banchay-main-item">
-                        <img src="./asset/image/hot5.jpg" alt="">
-                        <div class="banchay-main-item-content">
-                            <div class="line1">
-
-                            </div>
-                            <h3>GA-2200MFR-5A</h3>
-                            <p>4,664,000 đ</p>
-                        </div>
-                        <div class="new1">
-                            <span>hot</span>
-                        </div>
-                        <div class="sale-off1">
-                            <span>Giảm 30%</span>
-                        </div>
-                        <div class="giacu1">
-                            <span>1,800,000</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <!-- phần sản phẩm bán chạy -->
+            <div class="banchay">
+                <section id="banchay_slider">
+                    <div class="container" >
+                        <div class="banchay-controller">
+                            <div>
+                                <h2>Sản Phẩm bán chạy</h2>
+                            </div>
+                            <div id="banchay-controls">
+                                <button class="banchay-previous"><i class="fa-solid fa-angle-left"></i></button>
+                                <button class="banchay-next"><i class="fa-solid fa-angle-right"></i></button>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="line-box">
+        
+                            </div>
+                        </div>
+                        <div class="banchay-my-slider">
+                            <div class="banchay-slide">
+                                <div class="banchay-slide-box">
+                                    <img  src="./asset/image/new1.jpg" alt="">
+                                    <div class="banchay-line1">          
+                                    </div>
+                                    <div class="banchay-content">
+                                        <h2>GW-B5600HR-1</h2>
+                                        <h3>7000000 đ</h3>
+                                    </div>
+                                    <div class="banchay-new">
+                                        new
+                                    </div>
+                                    <div class="banchay-sale">
+                                        sale 30%
+                                    </div>
+                                    <div class="giacu">
+                                        5000000 đ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="banchay-slide">
+                                <div class="banchay-slide-box">
+                                    <img src="./asset/image/new2.jpg" alt="">
+                                    <div class="banchay-line1">                                          
+                                    </div>
+                                    <div class="banchay-content">
+                                        <h2>GW-B5600HR-1</h2>
+                                        <h3>7000000 đ</h3>
+                                    </div>
+                                    <div class="banchay-new">
+                                        new
+                                    </div>
+                                </div>                               
+                            </div>             
+                            <div class="banchay-slide">
+                                <div class="banchay-slide-box">
+                                    <img src="./asset/image/new2.jpg" alt="">
+                                    <div class="banchay-line1">                                          
+                                    </div>
+                                    <div class="banchay-content">
+                                        <h2>GW-B5600HR-1</h2>
+                                        <h3>7000000 đ</h3>
+                                    </div>
+                                    <div class="banchay-new">
+                                        new
+                                    </div>
+                                </div>                               
+                            </div>                 
+                            <div class="banchay-slide">
+                                <div class="banchay-slide-box">
+                                    <img src="./asset/image/new2.jpg" alt="">
+                                    <div class="banchay-line1">                                          
+                                    </div>
+                                    <div class="banchay-content">
+                                        <h2>GW-B5600HR-1</h2>
+                                        <h3>7000000 đ</h3>
+                                    </div>
+                                    <div class="banchay-new">
+                                        new
+                                    </div>
+                                </div>                               
+                            </div>                       
+                            <div class="banchay-slide">
+                                <div class="banchay-slide-box">
+                                    <img src="./asset/image/new2.jpg" alt="">
+                                    <div class="banchay-line1">                                          
+                                    </div>
+                                    <div class="banchay-content">
+                                        <h2>GW-B5600HR-1</h2>
+                                        <h3>7000000 đ</h3>
+                                    </div>
+                                    <div class="banchay-new">
+                                        new
+                                    </div>
+                                </div>                               
+                            </div>
+                            <div class="banchay-slide">
+                                <div class="banchay-slide-box">
+                                    <img src="./asset/image/new2.jpg" alt="">
+                                    <div class="banchay-line1">                                          
+                                    </div>
+                                    <div class="banchay-content">
+                                        <h2>GW-B5600HR-1</h2>
+                                        <h3>7000000 đ</h3>
+                                    </div>
+                                    <div class="banchay-new">
+                                        new
+                                    </div>
+                                </div>                               
+                            </div>
+                            <div class="banchay-slide">
+                                <div class="banchay-slide-box">
+                                    <img src="./asset/image/new2.jpg" alt="">
+                                    <div class="banchay-line1">                                          
+                                    </div>
+                                    <div class="banchay-content">
+                                        <h2>GW-B5600HR-1</h2>
+                                        <h3>7000000 đ</h3>
+                                    </div>
+                                    <div class="banchay-new">
+                                        new
+                                    </div>
+                                </div>                               
+                            </div>
+                            <div class="banchay-slide">
+                                <div class="banchay-slide-box">
+                                    <img src="./asset/image/new2.jpg" alt="">
+                                    <div class="banchay-line1">                                          
+                                    </div>
+                                    <div class="banchay-content">
+                                        <h2>GW-B5600HR-1</h2>
+                                        <h3>7000000 đ</h3>
+                                    </div>
+                                    <div class="banchay-new">
+                                        new
+                                    </div>
+                                </div>                               
+                            </div>
+                    </div>
+                </section>
+            </div>
+            <!-- end sản phẩm bán chạy -->
             <!-- phần phong cách -->
             <div class="phongcach">
                 <div class="phongcach-nen">
@@ -479,8 +579,8 @@
                     <div class="phongcach-container">
                         <div class="phongcach-content">
                             <h1>PHONG CÁCH</h1>
-                            <div class="sanphammoi-line">
-                                <div class="sanphammoi-line-box">
+                            <div class="line">
+                                <div class="line-box">
             
                                 </div>
                             </div>
