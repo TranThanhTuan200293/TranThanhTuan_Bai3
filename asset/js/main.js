@@ -112,3 +112,27 @@ let sanphamhot_content = tns({
     }
     
 })
+
+// phần phong cách
+function changeColor() {
+    var result = document.getElementById("ok1");
+    result.style.color=result.style.color == "red" ? "black" : "red";
+    var result = document.getElementById("ok2");
+    result.style.color=result.style.color == "black" ? "red" : "black";
+}
+var img = document.getElementById('img');
+var images = ['./asset/image/phongcach1.jpg','./asset/image/phongcach2.jpg'];
+var x=0;
+function phongcach(){
+    if(x<images.length)
+    {
+        x=x+1;
+    }
+    else
+    {
+        x=1;
+    }
+    img.innerHTML = "<img src="+images[x-1]+">";
+}
+setInterval(phongcach, 6000);
+setInterval(changeColor, 6000);

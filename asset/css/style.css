@@ -297,10 +297,16 @@ button {
     width: 45%;
     background-color: rgba(0, 0, 0, 0.3);
 }
+.category-item-name:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
 .category-item-name h3 {
     margin: 1%;
     text-align: center;
     color: white;
+}
+.category-item-name h3:hover {
+    color: red;
 }
 
 @media(max-width:768px){
@@ -397,6 +403,9 @@ button {
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
     border-bottom-right-radius: 15px;
+}
+.thuonghieu-item:hover{
+    border: 1px solid rgba(255, 0, 0, 0.7);
 }
 
 .thuonghieu-item img {
@@ -580,67 +589,66 @@ button {
     text-decoration:line-through
 }
 /* phần phong cách */
-.phongcach {
-    position: relative;
-    margin-bottom: 2%;
-}
 .phongcach-nen {
     display: flex;
-    clip-path: polygon(60% 0, 100% 0, 100% 100%, 44% 100%);
     margin-bottom: 2%;
+    
 }
-.phongcach-nen-left {
-    flex-basis: 36%;
+.phongcach-left {
+    flex-basis: 45%;
+    
 }
-.phongcach-nen-left img {
-    width: 100%;
-    height: 436px;
+.container_phongcach {
+    margin-left: 13.54%;
+    margin-top: 10%;
 }
-.phongcach-nen-right {
-    flex-basis: 64%;
+.phongcach_content{
+    margin-top: 10%;
 }
-.phongcach-nen-right img {
-    width: 100%;
-    height: 436px;
+#ok1{
+    color: red;
 }
-.phongcach-container {
-    width: 86%;
-    position: absolute;
-    top: 0;
-    display: flex;
-}
-.phongcach-content {
-    margin-top: 5%;
-    flex: 1;
-}
-.phongcach-content-list {
-    margin-top: 15%;
-    margin-bottom: 13%;
-    padding: 0;
-}
-.phongcach-content-list-item {
-    list-style: none;
-}
-.phongcach-content1 {
-    flex: 1;
+.phongcach-right {
+    flex-basis: 55%;
+    clip-path: polygon(21% 0, 100% 0, 100% 100%, 0% 100%);
     position: relative;
 }
-.phongcach-content1-box {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    background-color: rgba(0, 0, 0, 0.3);
-    border: 1px solid black;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    width: 20%;
-    display: flex;
+#img{
+    width: 100%;
 }
-.phongcach-content1-box a {
+#img img{
+    width: 100%;
+}
+.phongcach-right-box {
+    position: absolute;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 1%;
+    border-radius: 15px;
+    bottom: 3%;
+    left: 45%;
+}
+.phongcach-right-box a{
     text-decoration: none;
-    margin: 4% auto;
+    color: white;
+}
+.phongcach-right-box:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.phongcach-right-box a:hover{
+    color: red;
+}
+
+@media(max-width:768px){
+    .phongcach-nen {
+        flex-direction: column;
+    }
+    .phongcach-right {
+        clip-path: none;
+    }
+    .line {
+        width: 100%;
+    }
 }
 /* phần tin tức sự kiện */
 .tintuc {
@@ -660,6 +668,9 @@ button {
 .tintuc-left-top a {
     text-decoration: none;
     color: #f58220;
+}
+.tintuc-left-top a:hover{
+    color: rgba(0, 0, 0, 0.5);
 }
 .tintuc-left-line {
     width: 100%;
@@ -687,6 +698,13 @@ button {
 .tintuc-left-main-left {
     flex-basis: 47%;
 }
+.tintuc-left-main-left a{
+    text-decoration: none;
+    color: black;
+}
+.tintuc-left-main-left a:hover {
+    color: red;
+}
 .tintuc-left-main-left img {
     width: 90%;
     margin-left: 10%;
@@ -705,6 +723,13 @@ button {
 .tintuc-left-main-right-list-item h4 {
     margin: 1% auto;
 }
+.tintuc-left-main-right-list-item a{
+    text-decoration: none;
+    color: black;
+}
+.tintuc-left-main-right-list-item a:hover{
+    color: red;
+}
 .tintuc-right {
     flex-basis: 32%;
     margin-top: 0;
@@ -722,6 +747,13 @@ button {
 }
 .tintuc-right-main-right-list-item h4 {
     margin: 1% auto;
+}
+.tintuc-right-main-right-list-item a{
+    text-decoration: none;
+    color: black;
+}
+.tintuc-right-main-right-list-item a:hover{
+    color: red;
 }
 @media(max-width:768px){
     .tintuc {
