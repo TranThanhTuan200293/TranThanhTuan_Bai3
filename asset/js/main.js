@@ -2,18 +2,34 @@ $(document).ready(function(){
     // tìm tất cả li có sub-item và thêm vào 
     $('.sub-item').parent('li').addClass('has-child');
 });
+
+$(document).ready(function(){
+    $('.sub-btn').click(function(){
+        $(this).next('.sub-menu').slideToggle();
+        $(this).find('.dropdown').toggleClass('rotate');
+    });
+    $('.menu-btn').click(function(){
+        $('.side-bar').addClass('active');
+        $('.menu-btn').css("visibility","hidden");
+    });
+    $('.close-btn').click(function(){
+        $('.side-bar').removeClass('active');
+        $('.menu-btn').css("visibility","visible");
+    });
+});
+
 // slideshow
 var i=0;
-var images=[];
+var images1=[];
 var time = 10000;
 // list hình ảnh
-images[0] = './asset/image/slide1.jpg';
-images[1] = './asset/image/slide2.jpg';
-images[2] = './asset/image/slide3.jpg';
+images1[0] = './asset/image/slide1.jpg';
+images1[1] = './asset/image/slide2.jpg';
+images1[2] = './asset/image/slide3.jpg';
 // thay đổi hình ảnh
 function changeImage(){
-    document.slides.src = images[i];
-    if(i<images.length-1){
+    document.slides.src = images1[i];
+    if(i<images1.length-1){
         i++;
     }
     else{

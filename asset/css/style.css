@@ -27,10 +27,6 @@
 }
 
 /* phần header  */
-.header {
-
-}
-/* header top */
 .header-top {
     background-color: #313131;
 }
@@ -68,6 +64,13 @@
 }
 .header-center-left {
     flex-basis: 23%;
+    display: flex;
+}
+.menu-btn {
+    display: none;
+}
+.logo{
+    width: 100%;
     display: flex;
 }
 .header-center-right {
@@ -232,6 +235,113 @@ button {
     font: var(--fa-font-solid);
     content: "";
     color: black;
+}
+
+@media(max-width:768px){
+    #header-top-container{
+        flex-direction: column;
+    }
+    .header-top-left{
+        display: none;
+    }
+    .header-center-left {
+        flex-basis: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu-btn{
+        flex-basis: 10%;
+        display: block;
+    }
+    .logo{
+        flex-basis: 60%;
+    }
+    .header-center-right {
+        flex-basis: 10%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .search{
+        display: none;
+    }
+    .contact {
+        display: none;
+    }
+    .cart-content-list{
+        display: none;
+    }
+    #header-bottom-container{
+        display: none;
+    }
+}
+
+.side-bar {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+    height: 100vh;
+    width: 290px;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    overflow-y: auto;
+    transition: 1s ease;
+    transition-property: left;
+}
+.side-bar.active{
+    left: 0;
+}
+.side-bar .menu {
+    width: 100%;
+    margin-top: 80px;
+}
+.side-bar .menu .item {
+    position: relative;
+    cursor: pointer;
+}
+.side-bar .menu .item a{
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    padding: 5px 30px;
+    line-height: 60px;
+}
+.side-bar .menu .item a:hover{
+    background: #8621F8;
+}
+.side-bar .menu .item i{
+    margin-right: 15px;
+}
+.side-bar .menu .item a .dropdown {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    transition: 0.3s ease;
+}
+.side-bar .menu .item .sub-menu{
+    background: rgba(255, 255, 255, 0.1);
+    display: none;
+}
+.side-bar .menu .item .sub-menu a{
+    padding-left: 80px;
+}
+.rotate{
+    transform: rotate(90deg);
+}
+.close-btn {
+    position: absolute;   
+    color: white;
+    font-size: 20px;
+    right: 0;
+    margin: 25px;
+    cursor: pointer;
+}
+.menu-btn {
+    color: white;
+    font-size: 20px;
+
+    cursor: pointer;
 }
 /* phần slide */
 
